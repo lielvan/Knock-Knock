@@ -1,0 +1,14 @@
+div.image {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+div.app-body {
+}
+nav {
+  text-align: center;
+}
+button {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 15px;
+}

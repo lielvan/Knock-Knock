@@ -1,0 +1,14 @@
+
+<div class="image">
+  <img src="assets/KnockKnock_New.jpg">
+</div>
+
+<div class="app-body">
+  <nav>
+    <button *ngIf="isAuth() | async" class="app-button" routerLink="/chatlog" routerLinkActive="active">Chatlog</button>
+    <button *ngIf="isAuth() | async" class="app-button" routerLink="/doormessage" routerLinkActive="active">Door Message</button>
+    <button *ngIf="isAuth() | async" class="app-button" routerLink="/video-cam" routerLinkActive="active">Camera</button>
+    <button *ngIf="isAuth() | async" class="app-button" (click)="logout()">Logout</button>
+  </nav>
+<router-outlet></router-outlet>
+</div>

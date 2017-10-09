@@ -1,0 +1,20 @@
+<div class="chat-table">
+  <table>
+    <thead>
+      <tr class="text">
+        <th>Timestamp</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text" *ngFor="let item of messages | async">
+        <td>{{ item.timestamp | date:'short' }}</td>
+        <td>{{ item.text }}</td>
+      </tr>
+    </tbody>
+  </table>
+<div>
+<div class="send-button">
+  <input type="text" #chatMessage (keydown.enter)="send(chatMessage.value); chatMessage.value=''"/>
+  <button (click)="send(chatMessage.value); chatMessage.value=''">Send</button>
+</div>

@@ -1,0 +1,4 @@
+<div class="login-page">
+  <span class="error" *ngIf="error">{{ error }}</span>
+  <button (click)="login()" *ngIf="!(user | async)?.uid">Login</button>
+</div>

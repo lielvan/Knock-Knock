@@ -1,0 +1,11 @@
+table {
+  margin: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+th {
+  font-size: 29px;
+}
+div.send-button {
+  text-align: center;
+}

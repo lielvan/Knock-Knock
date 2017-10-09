@@ -1,0 +1,5 @@
+<h1>Message: {{(item | async)?.current}}</h1>
+<div>
+  <input type="text" #someMessage placeholder="New Message"/>
+  <button (click)="update(someMessage.value); someMessage.value=''">Update</button>
+</div>
